@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean font for the body */
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light background for the entire page */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem 2rem; /* Padding for navbar items */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased size for brand */
+}
+
+.nav-item .nav-link {
+    font-weight: bold; /* Bold text for nav links */
+    color: #007bff; /* Primary link color */
+}
+
+.nav-item .nav-link:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/your/image.jpg'); /* Background image */
+    height: 70vh; /* Increased height for impact */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    position: relative; /* For overlay */
+    margin-bottom: 40px; /* Space below hero section */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+.hero h1 {
+    z-index: 1; /* Above overlay */
+    font-size: 3.5rem; /* Larger font size for title */
+    margin: 0; /* No margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+
+.hero p {
+    z-index: 1; /* Above overlay */
+    font-size: 1.25rem; /* Font size for lead paragraph */
+    margin: 1rem 0; /* Margin for spacing */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    border-color: #004085; /* Darker border on hover */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transform for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card-img-top {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff; /* Light footer background */
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem 0; /* Padding for footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    color: #6c757d; /* Footer text color */
+}
+
+/* Accordion Styles */
+.card-header {
+    background-color: #007bff; /* Accordion header background */
+    color: white; /* Text color */
+}
+
+.btn-link {
+    color: white; /* Button link color in accordion */
+}
+
+.btn-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
